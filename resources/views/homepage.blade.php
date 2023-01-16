@@ -23,15 +23,19 @@
     <body>
         <main>
             <h1>Lista Film:</h1>
-            <ul>
+            <ul class="card">
                 @foreach ($movies as $movie)
                 <li>
                     <h3>{{$movie->title}}</h3>
                     <h3>{{$movie->original_title}}</h3>
+                    <div>{{$movie->nationality}}</div>
+                    <div>{{$movie->date}}</div>
+                    <div>{{$movie->vote}}</div>
                 </li>
                     
                 @endforeach
             <ul>
+        
         </main>
     </body>
 </html>
